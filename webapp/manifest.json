@@ -39,7 +39,7 @@
 
 	"sap.ui5": {
 		"rootView": {
-			"viewName": "medium.News.view.Basic",
+			"viewName": "medium.News.view.App",
 			"type": "XML"
 		},
 		"dependencies": {

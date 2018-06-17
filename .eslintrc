@@ -256,7 +256,7 @@
 		"yoda": [1, "never"]
 	},
 	"globals": {
-		"require": false,
+		"require": true,
 		"respond": false,
 		"getRow": false,
 		"emit": false,
@@ -264,8 +264,8 @@
 		"start": false,
 		"sum": false,
 		"log": false,
-		"exports": false,
-		"module": false,
+		"exports": true,
+		"module": true,
 		"provides": false,
 		"alert": false,
 		"confirm": false,
@@ -287,7 +287,7 @@
 		"dojo": false,
 		"dijit": false,
 		"dojox": false,
-		"define": false,
+		"define": true,
 		"$": false,
 		"jQuery": false,
 		"$$": false,

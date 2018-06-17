@@ -1,13 +1,14 @@
 sap.ui.define([
-	"sap/ui/core/mvc/Controller"
-], function(Controller) {
+	"medium/News/controller/Basic.controller",
+	"../classes/Cat"
+], function(Basic, Cat) {
 	"use strict";
 
-	return Controller.extend("medium.News.controller.Basic", {
+	return Basic.extend("medium.News.controller.Basic", {
 
 		onInit: function() {
 			// const xx = 2;
-
+			Cat.speak();
 			// const makeRequest = async() => {
 			// 	const data = await getJSON()
 			// 	if (data.needsAnotherRequest) {

@@ -1,4 +1,4 @@
-<mvc:View controllerName="medium.News.controller.Basic" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+<mvc:View controllerName="medium.News.controller.App" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
 	displayBlock="true" xmlns="sap.m">
 	<App id="idAppControl">
 		<pages>
