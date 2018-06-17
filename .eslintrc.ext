@@ -351,8 +351,8 @@
 			"helpUrl": "http://eslint.org/docs/rules/no-const-assign"
 		},
 		"no-constant-condition": {
-			"severity": "error",
-			"category": "Possible Error",
+			"severity": "info",
+			"category": "Variable",
 			"helpUrl": "http://eslint.org/docs/rules/no-constant-condition"
 		},
 		"no-continue": {
