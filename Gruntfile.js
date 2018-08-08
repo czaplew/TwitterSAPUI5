@@ -1,4 +1,4 @@
-module.exports = function(grunt) {
+module.exports = function (grunt) {
 	"use strict";
 	var webAppDir = "webapp";
 	var targetDir = "dist";
@@ -18,7 +18,7 @@ module.exports = function(grunt) {
 					cwd: "webapp/",
 					src: ["**/*.js"],
 					dest: tmpDirBabel,
-					filter: function(filepath) {
+					filter: function (filepath) {
 						return !filepath.match(new RegExp("webapp/libs", "gi"));
 					}
 				}]
@@ -35,7 +35,7 @@ module.exports = function(grunt) {
 					src: "**/*.js",
 					dest: tmpDirDbg,
 					cwd: tmpDirBabel,
-					filter: function(filepath) {
+					filter: function (filepath) {
 						return !filepath.match(new RegExp(webAppDir + "(\\/|\\\\)localService", "gi"));
 					}
 				}, {
@@ -56,7 +56,7 @@ module.exports = function(grunt) {
 					src: "**/*.js",
 					dest: tmpDir,
 					cwd: tmpDirBabel,
-					filter: function(filepath) {
+					filter: function (filepath) {
 						return !filepath.match(new RegExp("build" + "(\\/|\\\\)localService", "gi"));
 					}
 				}, {
@@ -79,7 +79,7 @@ module.exports = function(grunt) {
 					src: "**/*",
 					dest: tmpDir,
 					cwd: webAppDir,
-					filter: function(filepath) {
+					filter: function (filepath) {
 						return !filepath.match(new RegExp("(" + webAppDir +
 							"(\\/|\\\\)test|${webAppDir}(\\/|\\\\)localService|\\.js$|\\.css$|\\.ts$|\\test.html$)", "gi"));
 					}
@@ -90,7 +90,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks("grunt-babel");
 	grunt.loadNpmTasks("@sap/grunt-sapui5-bestpractice-build");
 	grunt.config.merge(config);
-	grunt.registerTask("default", "runs my tasks", function() {
+	grunt.registerTask("default", "runs my tasks", function () {
 		var tasks = [
 			"clean:build",
 			"babel",

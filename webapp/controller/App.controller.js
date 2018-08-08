@@ -1,14 +1,19 @@
 sap.ui.define([
 	"medium/News/controller/Basic.controller",
-	"../classes/Cat"
-], function(Basic, Cat) {
+	"../classes/Cat",
+	"../styles/myStyle"
+], function (Basic, Cat, myStyle) {
 	"use strict";
 
-	return Basic.extend("medium.News.controller.Basic", {
+	document.head.appendChild(
+		document.createElement('style')
+	).textContent = myStyle.style;
 
-		onInit: function() {
+	return Basic.extend("medium.News.controller.App", {
+
+		onInit: function () {
 			// const xx = 2;
-			Cat.speak();
+			// Cat.speak();
 			// const makeRequest = async() => {
 			// 	const data = await getJSON()
 			// 	if (data.needsAnotherRequest) {

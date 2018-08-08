@@ -2,8 +2,10 @@
 	displayBlock="true" xmlns="sap.m">
 	<App id="idAppControl">
 		<pages>
-			<Page title="{i18n>title}">
-				<content></content>
+			<Page class="cssinjs-panel" title="{i18n>title}">
+				<content>
+					<Button ></Button>
+				</content>
 			</Page>
 		</pages>
 	</App>
