@@ -7,7 +7,7 @@ sap.ui.define([
 
 	document.head.appendChild(
 		document.createElement('style')
-	).textContent = myStyle.style;
+	).textContent = myStyle.greenPanel;
 
 	return Basic.extend("medium.News.controller.App", {
 
